@@ -42,9 +42,14 @@ end
 def run
   "Please enter a command:"
   input = gets.chomp
-  if input == 'help'
+  if input == "help"
     help
-  elsif input ==
+  elsif input == "list"
+    list(songs)
+  elsif input == "play"
+    play(songs)
+  elsif input == "exit"
+    exit_jukebox
   end
 
 end
