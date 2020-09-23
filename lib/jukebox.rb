@@ -40,6 +40,7 @@ def play(songs)
 end
 
 def run(songs)
+  
   "Please enter a command:"
   input = gets.chomp
   if input == "help"
