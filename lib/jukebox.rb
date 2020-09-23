@@ -41,20 +41,20 @@ end
 
 def run(songs)
   while true do
-  puts "Please enter a command:"
-  input = gets.chomp
-  case input
-  when "help"
-    help
-  when "list"
-    list(songs)
-  when "play"
-    play(songs)
-  when "exit"
-    exit_jukebox
-    break
-  else
-    puts "Invalid input, please try again"
-  end
+    puts "Please enter a command:"
+    input = gets.chomp
+    case input
+    when "help"
+      help
+    when "list"
+      list(songs)
+    when "play"
+      play(songs)
+    when "exit"
+      exit_jukebox
+      break
+    else
+      puts "Invalid input, please try again"
+    end
 end
 
