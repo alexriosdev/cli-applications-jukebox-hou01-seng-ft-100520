@@ -40,7 +40,7 @@ def play(songs)
 end
 
 def run(songs)
-  "Please enter a command:"
+  puts "Please enter a command:"
   input = gets.chomp
   case input
   when "help"
