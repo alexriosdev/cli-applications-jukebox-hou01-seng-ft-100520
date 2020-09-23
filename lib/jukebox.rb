@@ -40,18 +40,20 @@ def play(songs)
 end
 
 def run(songs)
-  
   "Please enter a command:"
   input = gets.chomp
-  if input == "help"
+  case input
+  when "help"
     help
-  elsif input == "list"
+  when "list"
     list(songs)
-  elsif input == "play"
+  when "play"
     play(songs)
-  elsif input == "exit"
+  when "exit"
     exit_jukebox
+    break
+  else
+    puts "Invalid input, please try again"
   end
-
 end
 
